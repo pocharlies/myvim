@@ -20,11 +20,9 @@ set history=2000 " history length
 set showcmd " show mode
 set list " show hidden chars
 " hidden chars representation
-if has('unix')
-  set listchars=tab:^T,eol:¬
-else
-  set listchars=tab:^T,eol:$
-endif
+" linux versión chars config"
+"set listchars=tab:^T,eol:¬"
+set listchars=tab:^T,eol:$ " Mac's Version""
 set backup " backup files
 set backupdir=/tmp,. " backup files
 set directory=/tmp,. " swap files
